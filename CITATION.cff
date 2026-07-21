@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use these paper-support materials, please cite the associated manuscript."
+title: "LiteMSA-Grasp paper-support materials"
+type: software
+authors:
+  - family-names: Xiong
+    given-names: Bailin
+  - family-names: Hu
+    given-names: Qiguo
+  - family-names: Du
+    given-names: Kai
+  - family-names: Tang
+    given-names: Jinhui
+  - family-names: Wang
+    given-names: Renxiang
+repository-code: "https://github.com/xiongbolin/litemsa_grasp_final_paper_results"
+date-released: 2026-07-21
