@@ -4,7 +4,6 @@ This repository supports the manuscript **“LiteMSA-Grasp: Robust RGB-D Grasp P
 
 ## Included
 
-- Manuscript source and bibliography.
 - Selected Cornell and Jacquard configuration files preserved from the supplied project archive.
 - Core protocol and post-hoc soft-reliability result tables.
 - A small verification script that checks the headline values used in the manuscript.
