@@ -1,0 +1,69 @@
+project:
+  name: LiteMSA-Grasp-jacquard-domain-aug-objectwise
+  seed: 42
+  output_dir: experiments
+
+data:
+  input_size: 224
+  input_mode: rgbd
+  batch_size: 32
+  num_workers: 16
+  persistent_workers: true
+  prefetch_factor: 4
+  cache_valid_samples: true
+
+model:
+  input_channels: 4
+  width_mult: 1.0
+  base_channels: 32
+  attention_reduction: 8
+  dropout: 0.03
+  use_attention: true
+  fusion_mode: multi_scale
+  include_stem_fusion: true
+
+augmentation:
+  enabled: true
+  probability: 0.9
+  rgb_brightness: 0.25
+  rgb_contrast: 0.25
+  rgb_noise_std: 0.04
+  depth_scale_jitter: 0.12
+  depth_noise_std: 0.035
+  depth_dropout: 0.08
+
+train:
+  epochs: 20
+  learning_rate: 0.0006
+  min_learning_rate: 0.00003
+  scheduler: cosine
+  weight_decay: 0.0001
+  grad_clip_norm: 1.0
+  amp: true
+  device: auto
+  checkpoint_metric: rectangle_acc
+  valid_loss_interval: 5
+
+loss:
+  quality_weight: 1.0
+  angle_weight: 1.2
+  width_weight: 0.5
+  hard_sample_gamma: 1.0
+  positive_target_threshold: 0.15
+  positive_bce_weight: 6.0
+  angle_unit_weight: 0.05
+  normalize_angle_prediction: true
+
+eval:
+  warmup_iters: 10
+  benchmark_iters: 50
+  point_threshold_px: 12
+  rectangle_iou_threshold: 0.25
+  rectangle_angle_threshold_deg: 30
+  pred_rect_h_px: 14
+  quality_smoothing_kernel: 1
+  angle_confidence_weight: 0.0
+  rectangle_eval_interval: 1
+  rectangle_batch_size: 32
+  rectangle_num_workers: 8
+  rectangle_eval_max_samples: 2048
