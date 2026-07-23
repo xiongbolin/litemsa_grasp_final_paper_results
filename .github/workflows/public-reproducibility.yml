@@ -1,0 +1,38 @@
+name: Public reproducibility check
+
+on:
+  push:
+    branches:
+      - agent/publish-public-reproducibility
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: reproducibility/requirements.txt
+
+      - name: Install public verification dependencies
+        run: python -m pip install -r reproducibility/requirements.txt
+
+      - name: Verify public numeric package
+        run: python reproducibility/verify_public_package.py
+
+      - name: Regenerate Figure 3-5 panel plots
+        run: python reproducibility/figure_generation/regenerate_figures_3_5.py
+
+      - name: Check generated plot count
+        run: test "$(find reproducibility/figure_generation/generated -name '*.png' | wc -l)" -eq 9
