@@ -1,0 +1,9 @@
+Fig. 1. Architecture and evidence chain for LiteMSA-Grasp. The dense predictor, input-domain repair, attention diagnostics, and robot-free evidence boundary are separated explicitly.
+
+Fig. 2. Clean protocol performance across Cornell image-wise, Cornell object-group-wise, and Jacquard object-wise evaluation. Error bars summarize variability across five folds and three seeds.
+
+Fig. 3. Accuracy-severity curves for the DA-versus-attention analysis on Cornell. Input-domain augmentation repairs RGB noise, depth noise, and depth dropout in both attention-bearing and no-attention variants.
+
+Fig. 4. Jacquard object-wise corruption curves for LiteMSA and LiteMSA + DA. The largest repair occurs under depth dropout, while occlusion remains essentially unchanged.
+
+Fig. 5. Depth-dropout accuracy and trust stability across severity. Domain augmentation preserves both prediction accuracy and attention stability relative to the unaugmented model.
