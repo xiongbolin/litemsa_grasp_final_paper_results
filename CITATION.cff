@@ -5,8 +5,12 @@ type: software
 authors:
   - family-names: Xiong
     given-names: Bailin
+    email: 622250991028@mails.cqjtu.edu.cn
+    affiliation: Chongqing Jiaotong University
   - family-names: Hu
     given-names: Qiguo
+    email: swpihqg@cqjtu.edu.cn
+    affiliation: School of Mechatronics and Vehicle Engineering, Chongqing Jiaotong University
   - family-names: Du
     given-names: Kai
   - family-names: Tang
