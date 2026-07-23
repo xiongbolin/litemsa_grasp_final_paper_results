@@ -1,0 +1,5 @@
+• A 1.314M-parameter RGB-D grasp detector is evaluated under three protocols.
+• Input-domain augmentation repairs severe RGB and depth corruptions.
+• Depth-dropout AUC rises from 6.82% to 84.61% on Cornell.
+• Attention stability is audited with channel and spatial trust indices.
+• Clean Jacquard accuracy is retained after corruption-oriented training.
