@@ -13,9 +13,15 @@ authors:
     affiliation: School of Mechatronics and Vehicle Engineering, Chongqing Jiaotong University
   - family-names: Du
     given-names: Kai
+    email: 622250991054@mails.cqjtu.edu.cn
+    affiliation: Chongqing Jiaotong University
   - family-names: Tang
     given-names: Jinhui
+    email: 622250991019@mails.cqjtu.edu.cn
+    affiliation: Chongqing Jiaotong University
   - family-names: Wang
     given-names: Renxiang
+    email: 622250991037@mails.cqjtu.edu.cn
+    affiliation: Chongqing Jiaotong University
 repository-code: "https://github.com/xiongbolin/litemsa_grasp_final_paper_results"
 date-released: 2026-07-21
