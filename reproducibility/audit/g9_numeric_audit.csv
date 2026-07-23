@@ -1,0 +1,49 @@
+check_id,category,source,target,observed,expected,tolerance,absolute_difference,status,notes
+T1-CI-DA-MEAN,clean_summary,evidence_tables/final_rectangle_eval_runs.csv,litemsa_domain_aug,86.74199623352165,86.74,0.005,0.0019962335216519023,pass,
+T1-CI-DA-SD,clean_summary,evidence_tables/final_rectangle_eval_runs.csv,litemsa_domain_aug,2.461420047411267,2.46,0.005,0.0014200474112668893,pass,
+T1-CI-DA-N,clean_summary,evidence_tables/final_rectangle_eval_runs.csv,litemsa_domain_aug,15,15,0,0.0,pass,
+T1-COG-DA-MEAN,clean_summary,evidence_tables/final_rectangle_eval_runs.csv,litemsa_domain_aug,85.29012345679011,85.29,0.005,0.000123456790106502,pass,
+T1-COG-DA-SD,clean_summary,evidence_tables/final_rectangle_eval_runs.csv,litemsa_domain_aug,4.251687925850806,4.25,0.005,0.0016879258508062378,pass,
+T1-COG-DA-N,clean_summary,evidence_tables/final_rectangle_eval_runs.csv,litemsa_domain_aug,15,15,0,0.0,pass,
+T1-J-DA-MEAN,clean_summary,evidence_tables/final_rectangle_eval_runs.csv,litemsa_domain_aug,96.36050185554458,96.36,0.005,0.0005018555445843731,pass,
+T1-J-DA-SD,clean_summary,evidence_tables/final_rectangle_eval_runs.csv,litemsa_domain_aug,0.3412025560883836,0.34,0.005,0.0012025560883835995,pass,
+T1-J-DA-N,clean_summary,evidence_tables/final_rectangle_eval_runs.csv,litemsa_domain_aug,15,15,0,0.0,pass,
+T1-CI-BASE-MEAN,clean_summary,evidence_tables/final_rectangle_eval_runs.csv,litemsa,84.33145009416197,84.33,0.005,0.0014500941619672858,pass,
+T1-CI-BASE-SD,clean_summary,evidence_tables/final_rectangle_eval_runs.csv,litemsa,2.6280658785669577,2.63,0.005,0.0019341214330421685,pass,
+T1-CI-BASE-N,clean_summary,evidence_tables/final_rectangle_eval_runs.csv,litemsa,15,15,0,0.0,pass,
+T1-J-BASE-MEAN,clean_summary,evidence_tables/final_rectangle_eval_runs.csv,litemsa,96.38426097515215,96.38,0.005,0.004260975152149626,pass,
+T1-J-BASE-SD,clean_summary,evidence_tables/final_rectangle_eval_runs.csv,litemsa,0.586765747203908,0.59,0.005,0.0032342527960920187,pass,
+T1-J-BASE-N,clean_summary,evidence_tables/final_rectangle_eval_runs.csv,litemsa,15,15,0,0.0,pass,
+P-J-DA-v-BASE,exact_signflip_permutation,evidence_tables/final_rectangle_eval_runs.csv,litemsa_domain_aug vs litemsa,0.856201171875,0.8562,6e-05,1.1718750000389022e-06,pass,n=15; two-sided exact sign-flip on mean paired difference
+P-NOATTN,exact_signflip_permutation,evidence_tables/final_rectangle_eval_runs.csv,ablation_no_attention vs litemsa,6.103515625e-05,6.103515625e-05,1e-12,0.0,pass,n=15; two-sided exact sign-flip on mean paired difference
+P-NOMS,exact_signflip_permutation,evidence_tables/final_rectangle_eval_runs.csv,ablation_no_multiscale vs litemsa,0.0504150390625,0.0504150390625,1e-12,0.0,pass,n=15; two-sided exact sign-flip on mean paired difference
+P-RGBONLY,exact_signflip_permutation,evidence_tables/final_rectangle_eval_runs.csv,ablation_rgb_only vs litemsa,0.39520263671875,0.39520263671875,1e-12,0.0,pass,n=15; two-sided exact sign-flip on mean paired difference
+P-DEPTHONLY,exact_signflip_permutation,evidence_tables/final_rectangle_eval_runs.csv,ablation_depth_only vs litemsa,0.119384765625,0.119384765625,1e-12,0.0,pass,n=15; two-sided exact sign-flip on mean paired difference
+AUC-C-RGB-BASE,robustness_auc,evidence_tables/final_cornell_asoc_robustness_auc_summary.csv,litemsa/rgb_noise,6.31261770244821,6.31,0.005,0.0026177024482105793,pass,
+AUC-C-RGB-DA,robustness_auc,evidence_tables/final_cornell_asoc_robustness_auc_summary.csv,litemsa_domain_aug/rgb_noise,79.67608286252353,79.68,0.005,0.003917137476477706,pass,
+AUC-C-DD-BASE,robustness_auc,evidence_tables/final_cornell_asoc_robustness_auc_summary.csv,litemsa/depth_dropout,6.82485875706214,6.82,0.005,0.004858757062139674,pass,
+AUC-C-DD-DA,robustness_auc,evidence_tables/final_cornell_asoc_robustness_auc_summary.csv,litemsa_domain_aug/depth_dropout,84.61016949152544,84.61,0.005,0.000169491525440435,pass,
+AUC-J-RGB-BASE,robustness_auc,evidence_tables/final_jacquard_robustness_auc_summary.csv,litemsa/rgb_noise,68.47638503770666,68.48,0.005,0.0036149622933407954,pass,
+AUC-J-RGB-DA,robustness_auc,evidence_tables/final_jacquard_robustness_auc_summary.csv,litemsa_domain_aug/rgb_noise,93.43642065496526,93.44,0.005,0.0035793450347370026,pass,
+AUC-J-DD-BASE,robustness_auc,evidence_tables/final_jacquard_robustness_auc_summary.csv,litemsa/depth_dropout,15.7717137516719,15.77,0.005,0.0017137516719003543,pass,
+AUC-J-DD-DA,robustness_auc,evidence_tables/final_jacquard_robustness_auc_summary.csv,litemsa_domain_aug/depth_dropout,95.36275968596468,95.36,0.005,0.0027596859646763505,pass,
+AUC-J-STRIPE-DA,robustness_auc,evidence_tables/final_jacquard_robustness_auc_summary.csv,litemsa_domain_aug/depth_stripe_missing,61.93232583378787,61.93,0.005,0.002325833787871545,pass,
+AUC-J-OCC-DA,robustness_auc,evidence_tables/final_jacquard_robustness_auc_summary.csv,litemsa_domain_aug/occlusion,93.23565633520916,93.24,0.005,0.00434366479083792,pass,
+TRUST-L-RGB-ACC,trust_diagnostic,evidence_tables/final_trust_aggregate.csv,litemsa/rgb_noise/stored severity 3/rectangle_acc_mean,0.86629001883238,0.87,0.005,0.0037099811676200023,pass,Revised Table 6 uses this single frozen source and stored severity label.
+TRUST-L-RGB-SHIFT,trust_diagnostic,evidence_tables/final_trust_aggregate.csv,litemsa/rgb_noise/stored severity 3/mean_trust_shift_mean,5.689211067192523,5.689,0.0005,0.00021106719252284023,pass,Revised Table 6 uses this single frozen source and stored severity label.
+TRUST-L-RGB-CTSI,trust_diagnostic,evidence_tables/final_trust_aggregate.csv,litemsa/rgb_noise/stored severity 3/mean_channel_tsi_mean,0.4428632386753024,0.443,0.0005,0.0001367613246975874,pass,Revised Table 6 uses this single frozen source and stored severity label.
+TRUST-L-RGB-STSI,trust_diagnostic,evidence_tables/final_trust_aggregate.csv,litemsa/rgb_noise/stored severity 3/mean_spatial_tsi_mean,-1.128417687696062,-1.128,0.0005,0.0004176876960622078,pass,Revised Table 6 uses this single frozen source and stored severity label.
+TRUST-L-DD-ACC,trust_diagnostic,evidence_tables/final_trust_aggregate.csv,litemsa/depth_dropout/stored severity 3/rectangle_acc_mean,4.06779661016948,4.07,0.005,0.0022033898305204858,pass,Revised Table 6 uses this single frozen source and stored severity label.
+TRUST-L-DD-SHIFT,trust_diagnostic,evidence_tables/final_trust_aggregate.csv,litemsa/depth_dropout/stored severity 3/mean_trust_shift_mean,3.95741095403718,3.957,0.0005,0.0004109540371799447,pass,Revised Table 6 uses this single frozen source and stored severity label.
+TRUST-L-DD-CTSI,trust_diagnostic,evidence_tables/final_trust_aggregate.csv,litemsa/depth_dropout/stored severity 3/mean_channel_tsi_mean,0.4703846962148821,0.47,0.0005,0.0003846962148821298,pass,Revised Table 6 uses this single frozen source and stored severity label.
+TRUST-L-DD-STSI,trust_diagnostic,evidence_tables/final_trust_aggregate.csv,litemsa/depth_dropout/stored severity 3/mean_spatial_tsi_mean,-0.4261882499182236,-0.426,0.0005,0.00018824991822363746,pass,Revised Table 6 uses this single frozen source and stored severity label.
+TRUST-DA-RGB-ACC,trust_diagnostic,evidence_tables/final_trust_aggregate.csv,litemsa_domain_aug/rgb_noise/stored severity 3/rectangle_acc_mean,70.62146892655366,70.62,0.005,0.001468926553656047,pass,Revised Table 6 uses this single frozen source and stored severity label.
+TRUST-DA-RGB-SHIFT,trust_diagnostic,evidence_tables/final_trust_aggregate.csv,litemsa_domain_aug/rgb_noise/stored severity 3/mean_trust_shift_mean,0.1743786006324034,0.174,0.0005,0.00037860063240341413,pass,Revised Table 6 uses this single frozen source and stored severity label.
+TRUST-DA-RGB-CTSI,trust_diagnostic,evidence_tables/final_trust_aggregate.csv,litemsa_domain_aug/rgb_noise/stored severity 3/mean_channel_tsi_mean,0.9509150329884836,0.951,0.0005,8.49670115163903e-05,pass,Revised Table 6 uses this single frozen source and stored severity label.
+TRUST-DA-RGB-STSI,trust_diagnostic,evidence_tables/final_trust_aggregate.csv,litemsa_domain_aug/rgb_noise/stored severity 3/mean_spatial_tsi_mean,0.94875289886739,0.949,0.0005,0.00024710113260995037,pass,Revised Table 6 uses this single frozen source and stored severity label.
+TRUST-DA-DD-ACC,trust_diagnostic,evidence_tables/final_trust_aggregate.csv,litemsa_domain_aug/depth_dropout/stored severity 3/rectangle_acc_mean,83.84180790960453,83.84,0.005,0.001807909604522706,pass,Revised Table 6 uses this single frozen source and stored severity label.
+TRUST-DA-DD-SHIFT,trust_diagnostic,evidence_tables/final_trust_aggregate.csv,litemsa_domain_aug/depth_dropout/stored severity 3/mean_trust_shift_mean,0.3608245573923861,0.361,0.0005,0.00017544260761387376,pass,Revised Table 6 uses this single frozen source and stored severity label.
+TRUST-DA-DD-CTSI,trust_diagnostic,evidence_tables/final_trust_aggregate.csv,litemsa_domain_aug/depth_dropout/stored severity 3/mean_channel_tsi_mean,0.9695316699848556,0.97,0.0005,0.000468330015144347,pass,Revised Table 6 uses this single frozen source and stored severity label.
+TRUST-DA-DD-STSI,trust_diagnostic,evidence_tables/final_trust_aggregate.csv,litemsa_domain_aug/depth_dropout/stored severity 3/mean_spatial_tsi_mean,0.861308113170786,0.861,0.0005,0.0003081131707860507,pass,Revised Table 6 uses this single frozen source and stored severity label.
+SOFTREL-MAXABS,selective_reliability,evidence_tables/soft_reliability_vs_confidence_table.csv,max absolute difference,0.0012112676056337,0.0012112676056337257,1e-12,2.5804011705155006e-17,pass,
+SOFTREL-DIRECTION,selective_reliability,evidence_tables/soft_reliability_vs_confidence_table.csv,not consistently favorable,True,True,,,pass,Only two tiny positive entries; overall mean is negative.

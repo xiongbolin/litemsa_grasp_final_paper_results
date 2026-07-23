@@ -1,0 +1,5 @@
+dataset,protocol,method,method_label,mean_acc_percent,std_acc_percent
+cornell,image-wise,litemsa,LiteMSA,84.33145009416197,2.628065878566958
+cornell,image-wise,litemsa_domain_aug,LiteMSA + DA,86.74199623352166,2.461420047411263
+cornell,object-group-wise,litemsa_domain_aug,LiteMSA + DA,85.29012345679014,4.251687925850808
+jacquard,object-wise,litemsa_domain_aug,LiteMSA + DA,96.3605018555446,0.34120255608838346
