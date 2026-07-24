@@ -1,0 +1,7 @@
+claim_id,audit_id,expected,tolerance,description
+CLEAN_CORNELL_I_BASE,T1-CI-BASE-MEAN,84.33,0.005,Cornell image-wise LiteMSA mean accuracy
+CLEAN_CORNELL_I_DA,T1-CI-DA-MEAN,86.74,0.005,Cornell image-wise LiteMSA+DA mean accuracy
+CLEAN_CORNELL_G_DA,T1-COG-DA-MEAN,85.29,0.005,Cornell object-group-wise LiteMSA+DA mean accuracy
+CLEAN_JACQUARD_DA,T1-J-DA-MEAN,96.36,0.005,Jacquard LiteMSA+DA mean accuracy
+AUC_CORNELL_DDROP_DA,AUC-C-DD-DA,84.61,0.005,Cornell depth-dropout AUC for LiteMSA+DA
+AUC_JACQUARD_DDROP_DA,AUC-J-DD-DA,95.36,0.005,Jacquard depth-dropout AUC for LiteMSA+DA
