@@ -1,0 +1,16 @@
+Journal: Multimedia Tools and Applications
+Title: LiteMSA-Grasp: Lightweight multimodal RGB-D grasp-map prediction with corruption repair and attention diagnostics
+
+Authors:
+1. Bailin Xiong - first author and sole corresponding author
+2. Kai Du
+3. Jinhui Tang
+4. Renxiang Wang
+
+Removed author from current submission: Qiguo Hu
+
+Affiliation:
+Chongqing Jiaotong University
+
+Data boundary:
+Cornell and Jacquard are third-party datasets and are not redistributed.
