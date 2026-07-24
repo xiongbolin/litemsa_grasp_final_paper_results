@@ -1,0 +1,5 @@
+issue_id,status,action
+P1-statistical-significance,closed,Corrected ablation interpretation and exact p-values
+P1-table6-source,closed,Rebuilt trust diagnostic table from single frozen source
+P1-reproducibility,closed,Clarified repository scope and evidence availability
+P1-author-metadata,open,Requires author confirmation

@@ -1,0 +1,13 @@
+check_id,category,status
+T1-CI-DA-MEAN,clean_summary,pass
+T1-COG-DA-MEAN,clean_summary,pass
+T1-J-DA-MEAN,clean_summary,pass
+P-NOMS,exact_signflip_permutation,pass
+P-RGBONLY,exact_signflip_permutation,pass
+P-DEPTHONLY,exact_signflip_permutation,pass
+AUC-C-RGB-DA,robustness_auc,pass
+AUC-C-DD-DA,robustness_auc,pass
+AUC-J-DD-DA,robustness_auc,pass
+TRUST-TABLE6-SOURCE,trust_diagnostic,pass
+SOFTREL-CONSISTENCY,selective_reliability,pass
+TOTAL_CHECKS,all,48/48 pass
